@@ -9,5 +9,5 @@ b = int(input('B: '))
 if a == 0:
     if b == 1:
         print('любое число')
-    print('')фва
+    print('')
 не готово
