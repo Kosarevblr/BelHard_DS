@@ -1,13 +1,18 @@
- # дан список, вывести слова больше 3х симаолов и слова, расположенные дослова длиной 3 символа
+# дан список, вывести слова больше 3х символов и слова, расположенные до слова длиной 3 символа
 
 
 lst = ['snow', 'rain', 'wind', 'sun', 'clouds']
 for i in lst:
-    if len(i)>3:
+    if len(i) > 3:
         print(i)
-print()
-for j in range(len(lst)):
-    if len(lst[j])>3:
-        print(lst[j])
-    else:
-        break
+    if len(i) == 3:
+        ind = lst.index(i)
+        # print(*lst[:lst.index(i)])
+        print(ind)
+print(lst[:ind])
+# print()
+# for j in lst:
+#     if len(j) > 3:
+#         print(j)
+#     else:
+#         break

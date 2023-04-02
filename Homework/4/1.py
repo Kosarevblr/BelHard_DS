@@ -6,7 +6,7 @@
 a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 total = 0
 counter = 0
-number=0
+number = 0
 # for i in range(len(a)):                #1 способ
 #     total += a[i]
 #     counter += 1
@@ -14,10 +14,8 @@ number=0
 #         break
 # print(counter)
 
-while total < 15:                        #2 способ
+while total < 15:  # 2 способ
     number += 1
-    total += (number)
+    total += number
     counter += 1
 print(counter)
-
-

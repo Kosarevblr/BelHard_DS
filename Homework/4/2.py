@@ -1,13 +1,11 @@
 # дана строка, вывести ее до символа "р" включительно, пропуская каждый третий символ
 
 s = 'Break and Continue operators'
-s1 = ''
-for i in range(0, len(s)):
-    if s[i-1] == 'p':
+
+for index, char in enumerate(s):
+    if index % 3 == 0 and index != 0:
+        continue
+    if char == 'p':
+        print(char, end='')
         break
-    for j in range(0, len(s),2):
-        s1=s[j]
-
-
-print(s1)
-
+    print(char, end='')
