@@ -3,4 +3,4 @@
 import numpy as np
 
 m = np.array([[1, 2, 3], [32, 3, 12], [43, 11, 2]])
-print()
+print(max(map(max, m)))
