@@ -11,11 +11,11 @@ import random
 m = np.array([[random.randint(0, 100) for j in range(3)] for i in range(3)])
 print(m)
 
-# new_m = [0*elm if elm%2==0 else elm for elm in m]     почему не работает?
+new_m = [0*elm if elm%2==0 else elm for elm in m]     почему не работает?
 
-# for index, item in enumerate(m):
-#     if item%2==0:
-#         m[index] = 0
+for index, item in enumerate(m):
+    if item%2==0:
+        m[index] = 0
 #
 m[m % 2 == 0] = 0
 print(m)
