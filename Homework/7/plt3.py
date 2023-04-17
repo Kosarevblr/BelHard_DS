@@ -12,8 +12,32 @@ C = np.array([round(3/A[i], 3) for i in range(len(A))])
 D = np.array([round(3/B[i], 3) for i in range(len(B))])
 
 fig, axes = plt.subplots(nrows=2, ncols=2)
-axes[0][0]=plt.plot(A)
-axes[0][1]=plt.plot(B)
-axes[1][0]=plt.plot(C)
-axes[1][1]=plt.plot(D)
+axes[0][0].plot(A)
+axes[0][0].set_title('график А')
+axes[0][0].set_xlabel('X')
+axes[0][0].set_ylabel('Y')
+axes[0][0].grid(True)
+axes[0][1].plot(B)
+axes[0][1].set_title('график B')
+axes[0][1].set_xlabel('X')
+axes[0][1].set_ylabel('Y')
+axes[0][1].grid(True)
+axes[1][0].plot(C)
+axes[1][0].set_title('график C')
+axes[1][0].set_xlabel('X')
+axes[1][0].set_ylabel('Y')
+axes[1][0].grid(True)
+axes[1][1].plot(D)
+axes[1][1].set_title('график D')
+axes[1][1].set_xlabel('X')
+axes[1][1].set_ylabel('Y')
+axes[1][1].grid(True)
+
+fig.suptitle("Одна зона для всех графиков",fontsize=15)
+fig.subplots_adjust(left=None,
+    bottom=None,
+    right=None,
+    top=None,
+    wspace=0.5,
+    hspace=0.5,)
 plt.show()
