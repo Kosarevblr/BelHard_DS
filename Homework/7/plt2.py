@@ -9,4 +9,4 @@ ax = fig.add_axes([0,0,1,1])
 ax.plot(labels, july16_2007, label='july16_2007')
 ax.plot(labels, july16_2020, label='july16_2020')
 ax.grid(True)
-fig.show() #почему сразу закрывается??????
+plt.show()
