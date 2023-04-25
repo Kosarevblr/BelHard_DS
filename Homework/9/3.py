@@ -1,18 +1,18 @@
 # функция принимает произвольное кол-во целых чисел и определяет сколько 2значных, 3значных.
 # кол-во разрядов определяется в отдельной функции
 
-def count(num):
-    coun = 0
-    while num > 0:
-        num//=10
-        coun+=1
-    return coun
-
-
 def numbers():
     sp = list(map(int, input('Enter numbers: ').split()))
     numb2zn =0
     numb3zn = 0
+
+    def count(num):
+        coun = 0
+        while num > 0:
+            num //= 10
+            coun += 1
+        return coun
+
     for i in range(len(sp)):
         count(sp[i])
         if count(sp[i]) == 2:
